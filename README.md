@@ -1,4 +1,4 @@
-### Hello, I'm Kein Kimura 👋
+### Hello, 👋
 
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
 
@@ -18,8 +18,7 @@ I’m a software engineer with concentration in Blockchain Engineering, I love d
 
 - 🔭 I’m currently working on my ideas and Exploring blockchain technologies.
 - 👯 I’m looking to collaborate on any Nodejs, Golang or blockchain project.
-- 💬 Ask me about Backend development, distributed systems, JavaScript, TypeScript, Nodejs, Golang, API design and Blockachain technology.
-- 📫 How to reach me: kyotomo920@gmail.com
+- 💬 Ask me about Backend development, distributed systems, JavaScript, TypeScript, Nodejs, Rust, Golang, API design and Blockachain technology.
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I love space technology, building stuffs, watching animes, and reading how things work.
 
