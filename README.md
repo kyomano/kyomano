@@ -1,29 +1,99 @@
-### Hello, 👋
+# IoTeX dApp Sample V3
+
+<a href="https://iotex.io/devdiscord" target="_blank">
+  <img src="https://github.com/iotexproject/halogrants/blob/880eea4af074b082a75608c7376bd7a8eaa1ac21/img/btn-discord.svg" height="36px">
+</a>
+
+![8861650093939_ pic_hd](https://user-images.githubusercontent.com/448293/171796205-937711d1-e336-4770-9388-ec0b02de3b89.jpg)
 
 
+This is a boilerplate template for making your awesome dApp on IoTeX and ETH, BSC, and other possible chains ([request here](https://github.com/iotexproject/iotex-dapp-sample-v2/issues/new))
 
-I’m a software engineer with concentration in Blockchain Engineering, I love developing JavaScript, Typescript and Rust. Sometimes I work as a backend engineer building large scale distributed systems. Outside of my passion for building large scale distributed systems, I am interested in the future of work and how it will help transform startup development.
+Technology used in this template are
 
-## Worked with
+- [Next](https://github.com/vercel/next.js)
+- [React](https://reactjs.org/)
+- [TRPC](https://trpc.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Mobx](https://mobx.js.org/README.html)
+- [Matine](https://mantine.dev/core/theme-icon/)
+- [Cypress](https://www.cypress.io/)
 
-![L](https://img.shields.io/badge/Language-C-brightgreen)
-![L](https://img.shields.io/badge/Language-C%2B%2B-orange)
-![L](https://img.shields.io/badge/Language-C%23-brightgreen)
-![L](https://img.shields.io/badge/Language-Python-blue)
-![L](https://img.shields.io/badge/Language-Java-red)
-![L](https://img.shields.io/badge/Language-Html/Css/Javascript/Typescript-yellow)
-![L](https://img.shields.io/badge/Language-Solidity-red)
-![L](https://img.shields.io/badge/Language-SQL-blue)
-![L](https://img.shields.io/badge/Language-NoSQL-blue)
+## Intro
 
-- 🔭 I’m currently working on my ideas and Exploring blockchain technologies.
-- 👯 I’m looking to collaborate on any Nodejs, Golang or blockchain project.
-- 💬 Ask me about Backend development, distributed systems, JavaScript, TypeScript, Nodejs, Rust, Golang, API design and Blockachain technology.
-- 😄 Pronouns: he/him
-- ⚡ Fun fact: I love space technology, building stuffs, watching animes, and reading how things work.
+A starter for React with Typescript with the fast Vite and the beautiful Matine, tested with the powerful Cypress.
 
+## Cheat Sheet
 
+Here's a cheat sheet list to help you get started quickly
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">  <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jestjs.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+```ts
+import { rootStore, useStore } from '@/store/index';
+
+const { god } = useStore();
+// or const god = rootStore.god
+
+god.isConnect;
+
+god.currentChain;
+god.currentChain.chainId; // for current connected chain id
+god.currentChain.Coin; // eth/bnb/iotx
+god.currentChain.Coin.balance; // current balance
+// ... see ChainState
+
+god.currentNetwork;
+god.currentNetwork.account; // for current connected account address
+// ... see NetworkState
+
+god.setShowConnecter(); // to show/close the Wallet Selector
+
+god.currentNetwork.loadBalance(); // to load chain coin balance
+
+await rpc('query')({
+  UniswapRouter: [
+    { calls: [{ address: '0x95cB18889B968AbABb9104f30aF5b310bD007Fd8', chainId: 4689 }] },
+    {
+      swap: [
+        {
+          args: {
+            sellToken: 'BUSD_b',
+            buyToken: '0xb8744ae4032be5e5ef9fab94ee9c3bf38d5d2ae0',
+            buyAmount,
+            recipient: '0x2AcB8663B18d8c8180783C18b88D60b86de26dF2',
+            offlinePrice: true
+          }
+        },
+        {
+          amount: true,
+          data: true,
+          router: true,
+          path: {
+            address: true,
+            symbol: true,
+            decimals: true,
+            totalSupply: true
+          }
+        }
+      ]
+    }
+  ]
+});
+```
+
+## Generate sdk
+
+```
+$ npm i @smartgraph/cli -g
+$ pnpm dev
+$ smartgraph codegen -l http://localhost:3000/api/graphql -o ./src/lib
+
+```
+
+## Installation
+
+Clone the repo and run `pnpm install`
+
+## Start
+
+After the successfull installation of the packages: `pnpm dev`
 
