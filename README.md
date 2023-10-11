@@ -1,99 +1,34 @@
-# IoTeX dApp Sample V3
+<p align="center">
+  <a href="#">
+    <img alt="total stars" title="Total stars on GitHub"
+      src="https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=55960c&labelColor=488207&label=Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/crypto-codev520" /></a>
+  <a href="#">
+    <img alt="followers" title="Follow me on Github"
+      src="https://custom-icon-badges.herokuapp.com/github/followers/crypto-codev520?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white" /></a>
+  <a href="#">
+    <img alt="views" title="GitHub profile views"
+      src="https://shields-io-visitor-counter.herokuapp.com/badge?page=st&style=for-the-badge" /></a>
+</p>
 
-<a href="https://iotex.io/devdiscord" target="_blank">
-  <img src="https://github.com/iotexproject/halogrants/blob/880eea4af074b082a75608c7376bd7a8eaa1ac21/img/btn-discord.svg" height="36px">
-</a>
+<p align="center">
+  <a href="https://github.com/crypto-codev520/github-readme-streak-stats">
+    <img title="� Get streak stats for your profile at git.io/streak-stats" alt="crypto-codev520"
+      src="https://github-readme-streak-stats.herokuapp.com/?user=crypto-codev520&theme=monokai-metallian&hide_border=true" />
+  </a>
+</p>
 
-![8861650093939_ pic_hd](https://user-images.githubusercontent.com/448293/171796205-937711d1-e336-4770-9388-ec0b02de3b89.jpg)
+<p align="center">
+  <a href="https://github.com/crypto-codev520/github-readme-stats">
+    <img height="150"
+      src="https://github-readme-stats.vercel.app/api?username=crypto-codev520&count_private=true&show_icons=true&custom_title=Chimp's%20Github%20Status&hide=issues&theme=vision-friendly-dark" />
+  </a>
+
+  <a href="https://github.com/crypto-codev520/github-readme-stats">
+    <img height="150"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=crypto-codev520&layout=compact&theme=vision-friendly-dark" />
+  </a>
+</p>
 
 
-This is a boilerplate template for making your awesome dApp on IoTeX and ETH, BSC, and other possible chains ([request here](https://github.com/iotexproject/iotex-dapp-sample-v2/issues/new))
-
-Technology used in this template are
-
-- [Next](https://github.com/vercel/next.js)
-- [React](https://reactjs.org/)
-- [TRPC](https://trpc.io/)
-- [Typescript](https://www.typescriptlang.org/)
-- [Mobx](https://mobx.js.org/README.html)
-- [Matine](https://mantine.dev/core/theme-icon/)
-- [Cypress](https://www.cypress.io/)
-
-## Intro
-
-A starter for React with Typescript with the fast Vite and the beautiful Matine, tested with the powerful Cypress.
-
-## Cheat Sheet
-
-Here's a cheat sheet list to help you get started quickly
-
-```ts
-import { rootStore, useStore } from '@/store/index';
-
-const { god } = useStore();
-// or const god = rootStore.god
-
-god.isConnect;
-
-god.currentChain;
-god.currentChain.chainId; // for current connected chain id
-god.currentChain.Coin; // eth/bnb/iotx
-god.currentChain.Coin.balance; // current balance
-// ... see ChainState
-
-god.currentNetwork;
-god.currentNetwork.account; // for current connected account address
-// ... see NetworkState
-
-god.setShowConnecter(); // to show/close the Wallet Selector
-
-god.currentNetwork.loadBalance(); // to load chain coin balance
-
-await rpc('query')({
-  UniswapRouter: [
-    { calls: [{ address: '0x95cB18889B968AbABb9104f30aF5b310bD007Fd8', chainId: 4689 }] },
-    {
-      swap: [
-        {
-          args: {
-            sellToken: 'BUSD_b',
-            buyToken: '0xb8744ae4032be5e5ef9fab94ee9c3bf38d5d2ae0',
-            buyAmount,
-            recipient: '0x2AcB8663B18d8c8180783C18b88D60b86de26dF2',
-            offlinePrice: true
-          }
-        },
-        {
-          amount: true,
-          data: true,
-          router: true,
-          path: {
-            address: true,
-            symbol: true,
-            decimals: true,
-            totalSupply: true
-          }
-        }
-      ]
-    }
-  ]
-});
-```
-
-## Generate sdk
-
-```
-$ npm i @smartgraph/cli -g
-$ pnpm dev
-$ smartgraph codegen -l http://localhost:3000/api/graphql -o ./src/lib
-
-```
-
-## Installation
-
-Clone the repo and run `pnpm install`
-
-## Start
-
-After the successfull installation of the packages: `pnpm dev`
-
+- � How to reach me </br>
+Email: kian.initcoworker@gmail.com</br>
