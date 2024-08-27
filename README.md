@@ -30,7 +30,8 @@
 </p>
 
 <h1> Skill Sets </h1>
-<p> <b>Machine Learning, Chatbots, Artificial Intelligence (AI), Python, OpenCV, Large Language Model, Natural Language Processing (NLP), Data Analytics, Statistical Data Analysis, Data Modeling, Analytics, Data Scientist, Predictive Analytics, FastAPI, Scikit-learn, Pandas, Tensorflow</b> <p>
+-<p> <b>Machine Learning, Chatbots, Artificial Intelligence (AI), Python, OpenCV, Large Language Model, Natural Language Processing (NLP), Data Analytics, Statistical Data Analysis, Data Modeling, Analytics, Data Scientist, Predictive Analytics, FastAPI, Scikit-learn, Pandas, Tensorflow</b> <p>
+-<p> Golang, Nodejs, TS/JS, React, Nextjs </p>
 
 
 
